@@ -1,17 +1,19 @@
+/*
+ * Project Name: To Do List App
+ * Author: Taylor Lee
+ * Last modified: October 28th, 2022
+ * Desc: You will build a simple to-do app where users can add different types of notes. 
+ * In addition, users can approve or delete notes from the list.
+ */
+
 import React from 'react';
-import ReactDOM from 'react-dom/client';
+import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
-import reportWebVitals from './reportWebVitals';
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
+ReactDOM.render(
+	<React.StrictMode>
+		<App />
+	</React.StrictMode>,
+	document.getElementById('root')
 );
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
